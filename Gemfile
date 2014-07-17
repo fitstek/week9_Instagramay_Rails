@@ -29,6 +29,9 @@ gem 'spring',        group: :development
 #for attachments
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
+gem 'devise'
+
+gem 'aws-sdk'
 group :test, :development do
 	gem 'rspec-rails'
 	gem 'capybara'
