@@ -21,19 +21,20 @@
 						<div class="panel-body">
 							<% if post.image.present? %>
 								<%= image_tag post.image.url(:thumb), class: 'uploaded-pic' %>
-							<% end %>
-							<%= post.description %> 							
+								<%= post.description %> 
+							<% end %>							
     					</div>
-							<div class="panel-footer">
+						<div class="panel-footer">
 								<p>Posted by: <%= post.user.email %></p>
-							</div>
-						</div>						
-					</div>
+						</div>
+					</div>						
 				</div>
 			<% end %>
-		<% else %>
-			No posts yet
-	<% end %>
+		</div>
+	<% else %>
+		No posts yet
+	<%end%>
+
 
 	<%= link_to "Create a post", new_post_path, class: "btn btn-success btn-lg" %>
 </div>
