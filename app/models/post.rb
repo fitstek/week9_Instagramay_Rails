@@ -8,5 +8,17 @@ belongs_to :user
 		secret_access_key: Rails.application.secrets.s3_secret_key
   	}
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+
+  has_and_belongs_to_many :tags
+  def tag_names
+  	# tags.map(&:name).join(', ')
+  end
+
+  def tag_names=(tag_list)
+  	tag_list.split(',').each do |tag|
+  		tags << Tag.find_or_create_by(name: tag)
+  	end
+  end
+
 end
 

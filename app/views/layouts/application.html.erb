@@ -61,11 +61,14 @@
     </div>
   <% end %>
   
+  <%= notice %>
+  <%= alert %>
   <%= yield %>	
 
     <div class= "container">
       <footer>
         <p>&copy; Fitsum 2014</p>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-success" %>
       </footer>
     </div> <!-- /container -->
 
