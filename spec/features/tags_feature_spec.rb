@@ -21,27 +21,27 @@ describe 'tagging posts' do
       expect(page).to have_link '#swag'
     end
 
-  #   context 'existing posts' do
-  #     before do 
-  #       fitsum.posts.create title: 'Pic1', tag_names: 'yolo'
-  #       fitsum.posts.create title: 'Pic2', tag_names: 'swag'
+    context 'existing posts' do
+      before do 
+        fitsum.posts.create title: 'Pic1', tag_names: 'yolo'
+        fitsum.posts.create title: 'Pic2', tag_names: 'swag'
 
-  #       visit '/posts'
-  #     end
+        visit '/posts'
+      end
 
-  #     it 'should filter posts by selected tag' do
+      it 'should filter posts by selected tag' do
 
-  #       click_link 'yolo'
-  #       expect(page).to have_css 'h1', 'posts associated with yolo'
-  #       expect(page).to have_content 'Pic1'
-  #       expect(page).not_to have_content 'Pic2'
-  #     end 
+        click_link 'yolo'
+        expect(page).to have_css 'h1', 'posts associated with yolo'
+        expect(page).to have_content 'Pic1'
+        expect(page).not_to have_content 'Pic2'
+      end 
 
-  #     it 'uses the tag name in the url' do
-  #       click_link 'yolo'
+      it 'uses the tag name in the url' do
+        click_link 'yolo'
 
-  #       expect(current_path).to eq '/tags/yolo'
-  #     end
-  #   end
+        expect(current_path).to eq '/tags/yolo'
+      end
+    end
   end
 end
