@@ -12,9 +12,9 @@
 	<% end %>
 <div class="container">
 	<% if @posts.any? %>
-		<% @posts.each do |post| %> 	
+		<% @posts.in_groups_of(3, false).each do |post_triplet| %> 	
 				<div class="row">
-					<%= render post %>
+					<%= render post_triplet %>	
 				</div>
 		<% end %>
 	<% else %>

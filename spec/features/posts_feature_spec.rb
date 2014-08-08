@@ -1,9 +1,10 @@
 require 'rails_helper'
 
-def fill_form(title,description)
+def fill_form(title,description, address)
 		visit '/posts/new'
 		fill_in 'Title', with: title
 		fill_in 'Description', with: description
+		fill_in 'Address', with: address
 	end
 
 describe 'posts' do
@@ -55,7 +56,7 @@ describe 'posts' do
 				login_as fitsum
 				visit '/posts'
 				click_link 'Create a post'
-				fill_form( 'My instagram' , 'cool')
+				fill_form( 'My instagram' , 'cool', '25 City Road, London')
 				attach_file 'Image', Rails.root.join('spec/images/old-man.jpg')
 				click_button 'Post it'
 

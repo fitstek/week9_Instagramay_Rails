@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require bootstrap-tagsinput
+//= require gmaps
 //= require_tree .
