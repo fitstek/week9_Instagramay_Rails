@@ -13,6 +13,7 @@
 					<%= link_to tag.name, tag_path(tag) %>
 				<% end %>
 			</p>
+			<p><%= link_to 'Buy', new_post_charge_path(post), class: 'btn btn-success' %></p>
 			<% unless post.address.blank? %>
 				<%= link_to 'Map', post_map_path(post), class: 'btn btn-success' %>
 			<% end %>

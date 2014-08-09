@@ -56,7 +56,8 @@
           <a class="navbar-brand" href="#">Instagramay</a>
         </div>
         <div class="navbar-collapse collapse">
-          Welcome: <%= current_user.email %>
+          <% user = current_user || current_admin %>
+          Welcome: <%= user.email %>
         </div>
       </div>
     </div>

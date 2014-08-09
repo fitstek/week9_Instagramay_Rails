@@ -32,6 +32,8 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 gem 'devise'
 
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 gem 'aws-sdk'
 group :test, :development do
 	gem 'rspec-rails'

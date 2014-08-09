@@ -1,0 +1,8 @@
+<% if @order.any? %>
+	<% @order.each do |order| %>
+		<p><%= order.post.title %></p>
+		<p><%= order.user.email %></p>
+	<% end %>
+<% else %>
+	No orders yet :-(
+<% end %>
