@@ -3,7 +3,7 @@ belongs_to :user
   has_attached_file :image, 
   	styles: {  thumb:  "300x300>" },
   	storage: :s3, s3_credentials: {
-  		bucket: 'instagram_fitsum',
+  		bucket: 'fitstekinstagramay',
   		access_key_id: Rails.application.secrets.s3_access_key,
 		  secret_access_key: Rails.application.secrets.s3_secret_key
   	}
