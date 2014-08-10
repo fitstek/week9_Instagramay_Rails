@@ -40,6 +40,8 @@ group :test, :development do
 	gem 'capybara'
 	gem 'poltergeist'
 	gem 'database_cleaner'
+	gem 'capybara-email'
+	gem 'mailcatcher'
 end
 
 # Use ActiveModel has_secure_password

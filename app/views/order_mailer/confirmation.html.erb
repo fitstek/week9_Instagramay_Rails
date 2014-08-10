@@ -1,0 +1,9 @@
+<h1>Order successful!</h1>
+
+<p>Thanks for your order</p>
+
+<p>You just ordered a print of <%= @order.post.title  %></p>
+
+<!-- The line below is just paperclips way of accessing images  and we use posts_url instead of posts_path 
+	cos we need to specify the full url -->
+<%= image_tag(@order.post.image.url(:medium)) %>

@@ -25,6 +25,7 @@ class ChargesController < ApplicationController
 
 	  Order.create(user: current_user, post: @post)
 
+
 	  flash[:notice] = 'Thank you for your payment'
 	  redirect_to posts_path
 
