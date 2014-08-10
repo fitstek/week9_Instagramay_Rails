@@ -35,6 +35,9 @@ gem 'devise'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 gem 'aws-sdk'
+
+gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
+
 group :test, :development do
 	gem 'rspec-rails'
 	gem 'capybara'
