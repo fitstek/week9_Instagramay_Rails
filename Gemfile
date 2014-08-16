@@ -42,6 +42,8 @@ gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 
 gem 'thin'
 
+gem 'factory_girl_rails'
+
 group :test, :development do
 	gem 'rspec-rails'
 	gem 'capybara'

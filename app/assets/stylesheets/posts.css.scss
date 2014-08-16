@@ -6,6 +6,10 @@
 .panel {
   height: 500px;
   position: relative;
+
+  .panel-heading {
+	height: 40px;
+	}
 }
 
 .panel-footer {
@@ -14,6 +18,3 @@
   width: 100%;
 }
 
-.panel-heading {
-	height: 40px;
-}
