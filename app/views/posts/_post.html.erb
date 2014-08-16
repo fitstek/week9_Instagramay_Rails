@@ -17,7 +17,7 @@
 			<% unless post.address.blank? %>
 				<%= link_to 'Map', post_map_path(post), class: 'btn btn-success' %>
 			<% end %>
-										
+			<%= link_to "❤ #{post.likes.count}", post_likes_path(post), method: :post, class: 'btn btn-danger'  %>							
 		</div>
 		<div class="panel-footer">
 				<p>Posted by: <%= post.user.email %></p>

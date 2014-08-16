@@ -9,6 +9,7 @@ belongs_to :user
   	}
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 
+  has_many :likes
   has_and_belongs_to_many :tags
   def tag_names
   	# tags.map(&:name).join(', ')
