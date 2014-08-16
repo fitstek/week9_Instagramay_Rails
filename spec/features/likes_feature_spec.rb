@@ -16,4 +16,11 @@ describe 'liking posts' do
     click_link '❤ 0'
     expect(page).to have_link '❤1'
   end
+
+  it 'can only be liked once per user', js: true do
+    visit posts_path
+    click_link '❤ 0'
+    click_link '❤ 1'
+    expect(page).to have_link '❤1'
+  end
 end
