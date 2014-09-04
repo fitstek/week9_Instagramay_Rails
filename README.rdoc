@@ -1,28 +1,23 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+== Description
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+A clone of the Instagram website done in Rails. A user can sign_up, upload and share photos, like photos, buy photos. 
+
+== Technologies Used
+
+
+* RoR
+* Websockets
+* Stripe API
+* Google maps API
+* AJAX
+* Bootstrap 
+* Capybara for feature testing etc..
+
+== How to use
+
+
+* git clone git@github.com:fitstek/week9_Instagramay_Rails.git
+* cd week9_Instagramay_Rails
+
+* I have uploaded this on Heroku and it is at http://instagramfitstek.herokuapp.com/
